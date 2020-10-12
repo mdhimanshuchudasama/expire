@@ -1,0 +1,1231 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.content {
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* -------------------
+        Header
+----------------------*/
+.navbar {
+    background: #3d4148;
+    font-family: 'Raleway', sans-serif;
+    position: sticky;
+}
+
+nav {
+    height: 90px;
+    width: 100%;
+    font-weight: 300;
+}
+
+.logo {
+    width: 100%;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    /* display: inline-block; */
+}
+
+.logo .fa-folder {
+    color: #ef402a;
+    font-size: 36px;
+}
+
+.logo .fa-inverse {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.logo span.logo-title {
+    line-height: 90px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border-bottom: 1px solid #ef402a;
+}
+
+.checkbtn {
+    font-size: 32px;
+    line-height: 90px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/*--------------------
+        Banner
+----------------------*/
+
+.banner {
+    width: 100%;
+    background: #fff;
+}
+
+/* --------------------
+        AboutUs
+-----------------------*/
+
+.aboutus {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.aboutus .inner-width {
+    padding: 50px 0;
+}
+
+.aboutus-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutus-title {
+    font-size: 45px;
+    color: #272d32;
+    font-weight: 500;
+}
+
+.aboutus .border {
+    max-width: 200px;
+    position: relative;
+    background: linear-gradient(to right, #ef402a, #4e5860);
+    padding: 1px;
+    z-index: -1;
+}
+
+.aboutus .aboutus-text {
+    margin: 20px 0 50px 0;
+}
+
+.aboutus-desc {
+    width: 25%;
+    padding: 0 10px;
+    padding-bottom: 0;
+}
+
+.aboutus-desc p {
+    font-size: 28px;
+    color: #4e5860;
+    padding: 0 10px 0 10px;
+    line-height: 1.2em;
+}
+
+.aboutus-desc button {
+    background: #ef402a;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: none;
+    margin-top: 17px;
+    font-family: 'Raleway';
+}
+
+.aboutus-services {
+    width: 75%;
+    display: flex;
+}
+
+.aboutus-service-box {
+    width: 33.33%;
+    margin: 0 10px;
+    border: 1px solid #3d4148;
+    padding: 10px;
+}
+
+.aboutus .fa-folder {
+    color: #fff;
+    font-size: 500px;
+}
+
+.aboutus-services .fa-inverse {
+    color: #000000;
+    font-size: 20px;
+}
+
+.aboutus .service-heading {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-heading .service-icon {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.service-heading .service-title h1 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.aboutus .service-desc p {
+    font-size: 14px;
+}
+
+
+/* --------------------
+        Paralax
+-----------------------*/
+
+.paralax {
+    background: #d14b3a;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.paralax .paralax-title {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.paralax .border {
+    max-width: 150px;
+    height: 1px;
+    margin: 30px auto;
+    background: #fff;
+}
+
+.paralax .paralax-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.paralax .paralax-quote {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 880px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.paralax-quote .quote {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.paralax-quote .writer {
+    text-align: left;
+}
+
+
+/*---------------------------
+        State Excerpt
+-----------------------------*/
+
+.state-excerpts {
+    background: #656d7a;
+    font-family: 'Raleway';
+}
+
+.state-excerpts .inner-width {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+
+}
+
+.state-excerpt {
+    width: 25%;
+    color: #fff;
+}
+
+.state-count {
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.state-count h3 {
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.state-text h2 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/*---------------------
+        Blog
+-----------------------*/
+
+.blog {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.blog-title {
+    font-family: 'Raleway';
+    font-size: 45px;
+    color: #272d32;
+    font-weight: 600;
+}
+
+.blog .border {
+    max-width: 150px;
+    margin: 20px auto;
+    position: relative;
+    background: linear-gradient(to right, #ef402a, #4e5860);
+    padding: 1px;
+}
+
+.blog .blog-text {
+    margin: 20px 0 50px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*---------------------- 
+        Portfolio
+------------------------*/
+
+.portfolio {
+    text-align: center;
+    margin: 80px 0;
+    border-bottom: 1px solid #797d83;
+}
+
+.portfolio .inner-width {
+    padding-bottom: 50px;
+}
+
+.portfolio-title {
+    font-family: 'Raleway';
+    font-size: 45px;
+    color: #272d32;
+    font-weight: 600;
+}
+
+.portfolio .border {
+    max-width: 150px;
+    margin: 20px auto;
+    background: linear-gradient(to right, #ef402a, #4e5860);
+    padding: 1px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.portfolio-box {
+    width: 25%;
+    box-sizing: border-box;
+    position: relative;
+    background: #656d78;
+    height: 180px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #797d83;
+
+}
+
+.portfolio-box:hover {
+    background: #dcdddf;
+    transition: 0.2s;
+}
+
+.portfolio .fa-folder {
+    position: absolute;
+    transform: scaleX(-1) rotate(180deg) scale(22, 16);
+    color: #656d78;
+    margin-top: 46px !important;
+    border-radius: 0 0 0 0;
+}
+
+.portfolio-box:hover .portfolio .fa-folder {
+    color: #51565c;
+}
+
+.portfolio-box span.icons {
+    color: #656d78;
+    bottom: 15px;
+    right: 35px;
+    position: absolute;
+}
+
+.portfolio-box span.icons .fa-search-plus {
+    margin-left: 25px;
+}
+
+.portfolio-box:hover span.icons svg:hover {
+    color: #d14b3a;
+    cursor: pointer;
+}
+
+.portfolio-btn button {
+    color: #d14b3a;
+    background: #fff;
+    border: 1px solid #d14b3a;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+/*--------------------- 
+        Partners
+----------------------*/
+
+.partners {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.partner {
+    width: 16.33%;
+    border: 1px solid #779977;
+    padding: 30px 0;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+/*------------------------ 
+        Testimonial
+--------------------------*/
+
+.testimonial {
+    background: url(../images/bg-img.jpg);
+    /* background-size: cover; */
+    overflow: hidden;
+    margin: 80px 0;
+    border-bottom: 1px solid #797d83;
+}
+
+.testimonial .inner-width {
+    padding-bottom: 50px;
+}
+
+.testimonial-title {
+    font-family: 'Raleway';
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.testimonial .border {
+    max-width: 150px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 1px;
+}
+
+.testimonial-boxes {
+    width: 100%;
+    display: flex;
+}
+
+.testimonial-box-1 {
+    width: 49%;
+    font-family: 'Raleway';
+    float: left;
+    display: flex;
+    background: #fff;
+    margin-top: 150px;
+}
+
+.t1-icon {
+    width: 20%;
+    color: #656d78;
+    font-size: 70px;
+}
+
+.t1-icon span {
+    padding: 15px;
+}
+
+.client-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    float: right;
+    text-align: left;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.client-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.client-info h1 {
+    font-weight: 600;
+    color: #303030;
+    font-size: 24px;
+}
+
+.client-info h2 {
+    font-size: 14px;
+    color: #ff3c1f;
+    font-weight: 500;
+    margin-left: 23px;
+    padding: 7px;
+}
+
+.client-review {
+    color: #656d78;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-style: italic;
+}
+
+.testimonial-box-2 {
+    background: #fff;
+    width: 49%;
+    float: right;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-family: 'Raleway';
+}
+
+.t2-expand {
+    font-weight: 600;
+    padding: 10px;
+    color: #303030;
+    font-size: 14px;
+}
+
+.t2-desc {
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 25px;
+    font-style: italic;
+    color: #656d78;
+}
+
+
+/* -----------------
+    Contact us
+--------------------*/
+
+.contactus {
+    /* margin: 80px 0; */
+    background: url(../images/contactus-bg.jpg);
+}
+
+.contactus .inner-width {
+    padding-bottom: 50px;
+}
+
+.contactus-title {
+    font-family: 'Raleway';
+    font-size: 45px;
+    color: #272d32;
+    font-weight: 600;
+}
+
+.contactus .border {
+    max-width: 150px;
+    margin: 20px 0;
+    background: linear-gradient(to right, #ef402a, #4e5860);
+    padding: 1px;
+}
+
+.contactus-text {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0 50px 0;
+}
+
+.contact-types {
+    width: 100%;
+    display: flex;
+}
+
+.contact-type {
+    width: 40%;
+}
+
+.location,
+.email,
+.phone {
+    display: flex;
+    padding: 0 10px;
+}
+
+.contact-type .icon {
+    color: #272d27;
+    padding: 20px;
+}
+
+.email-id {
+    padding: 20px 5px;
+    color: red;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.address,
+.phone-no {
+    font-family: 'Open Sans', sans-serif;
+    padding: 14px 10px;
+    color: #272d27;
+    font-size: 14px;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px 10px 10px 5px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    border: 1px solid #272d27;
+    border-top: none;
+    margin: 10px auto;
+}
+
+.field {
+    display: flex;
+}
+
+#name,
+#email {
+    width: 50%;
+
+}
+
+#name {
+    margin-right: 10px;
+}
+
+#subject,
+textarea {
+    width: 100%;
+}
+
+/*----------------------
+        Google Map
+------------------------*/
+
+.google-map {
+    background: url(../images/map.jpg);
+    background-size: cover;
+    height: 320px;
+    text-align: center;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.map-marker {
+    position: absolute;
+    top: 130px;
+    right: 440px;
+}
+
+.marker-location {
+    padding: 10px 20px;
+    position: absolute;
+    background: #fff;
+    top: 110px;
+    right: 280px;
+}
+
+.marker-location h1 {
+    font-size: 20px;
+    color: #303030;
+    text-transform: uppercase;
+}
+
+.marker-location p {
+    font-size: 14px;
+    color: #303030;
+}
+
+/* ---------------------
+        Footer
+------------------------*/
+
+.footer {
+    font-family: 'Raleway';
+    background: #303030;
+}
+
+.footer .inner-width {
+    display: flex;
+
+    /* flex-wrap: wrap; */
+}
+
+.social-icons {
+    width: 40%;
+}
+
+.social-icons ul {
+    float: left;
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+}
+
+.social-icons ul li {
+    margin: auto 0;
+    margin-right: 20px;
+    /* margin-top: 43.4px; */
+}
+
+.social-icons ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-logo {
+    width: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    margin: 0 auto;
+    font-weight: 300;
+    padding: 20px 0;
+    /* display: inline-block; */
+}
+
+.footer-logo .fa-folder {
+    color: #ef402a;
+    font-size: 36px;
+}
+
+.footer-logo .fa-inverse {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.footer .copyright {
+    width: 40%;
+    text-align: right;
+    padding: 50px 0;
+}
+
+.footer .copyright p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ----------------------
+        Responsive 
+-------------------------*/
+
+@media screen and (min-width:1200px) {
+    .content {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width:1199.98px) and (min-width:992px) {
+    .content {
+        max-width: 960px;
+    }
+
+    /* about us */
+    .aboutus-desc button {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:991.98px) and (min-width:768px) {
+    .content {
+        max-width: 740px;
+    }
+
+    /* header */
+    label.logo {
+        font-size: 30px;
+    }
+
+    ul.navigation {
+        position: fixed;
+        width: 100%;
+        background: #3d4148;
+        height: 100vh;
+        left: -100%;
+        top: 90px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        border-bottom: none;
+        color: #ef402a;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    /* about us */
+
+    .aboutus-desc {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        padding-bottom: 20px;
+        /* flex-wrap: wrap; */
+    }
+
+    .aboutus-desc p {
+        float: left;
+    }
+
+    .aboutus-desc button {
+        max-width: 30%;
+        width: 100%;
+        padding: 10px;
+        margin-right: 10px;
+        float: right;
+        margin-top: 0;
+    }
+
+    .aboutus-services {
+        width: 100%;
+    }
+
+    /* paralax */
+
+    .paralax-title {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .paralax-quote .quote {
+        font-size: 22px;
+    }
+
+    .writer {
+        text-align: center !important;
+    }
+
+    /* state-excerpt */
+
+    .state-excerpt {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .state-count {
+        display: unset;
+    }
+}
+
+@media screen and (max-width:767.98px) and (min-width:576px) {
+    .content {
+        max-width: 540px;
+    }
+
+    /* Header */
+
+    label.logo {
+        font-size: 30px;
+    }
+
+    ul.navigation {
+        position: fixed;
+        width: 100%;
+        background: #3d4148;
+        height: 100vh;
+        left: -100%;
+        top: 90px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        border-bottom: none;
+        color: #ef402a;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    /* about us */
+
+    .aboutus .aboutus-text {
+        margin-bottom: 30px;
+    }
+
+    .aboutus-desc {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .aboutus-desc p {
+        float: left;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .aboutus-desc button {
+        width: 100%;
+        float: right;
+        margin-top: 0;
+    }
+
+    .aboutus-services {
+        width: 100%;
+        display: block;
+    }
+
+    .aboutus-service-box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* paralax */
+
+    .paralax-title {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .paralax-quote .quote {
+        font-size: 22px;
+    }
+
+    .writer {
+        text-align: center !important;
+    }
+
+    /* state-excerpt */
+
+    .state-excerpt {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .state-count {
+        display: unset;
+    }
+}
+
+@media screen and (max-width:575.98px) and (min-width:411px) {
+
+    /* Header */
+
+    label.logo {
+        font-size: 30px;
+    }
+
+    ul.navigation {
+        position: fixed;
+        width: 100%;
+        background: #3d4148;
+        height: 100vh;
+        left: -100%;
+        top: 90px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        border-bottom: none;
+        color: #ef402a;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    /* about us */
+
+    .aboutus-title,
+    .aboutus .border {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .aboutus .aboutus-text {
+        margin-bottom: 30px;
+    }
+
+    .aboutus-desc {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .aboutus-desc p {
+        float: left;
+        padding: 0;
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .aboutus-desc button {
+        width: 100%;
+        float: right;
+        margin-top: 0;
+    }
+
+    .aboutus-services {
+        width: 100%;
+        display: block;
+    }
+
+    .aboutus-service-box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* paralax */
+
+    .paralax-title {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .paralax-quote .quote {
+        font-size: 22px;
+    }
+
+    .writer {
+        text-align: center !important;
+    }
+
+    /* state-excerpt */
+
+    .state-excerpt {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .state-count {
+        display: unset;
+    }
+}
+
+@media screen and (max-width:410.98px) and (min-width:320px) {
+
+    /* Header */
+    label.logo {
+        font-size: 30px;
+    }
+
+    ul.navigation {
+        position: fixed;
+        width: 100%;
+        background: #3d4148;
+        height: 100vh;
+        left: -100%;
+        top: 90px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        border-bottom: none;
+        color: #ef402a;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    /* about us */
+
+    .aboutus-title {
+        font-size: 40px;
+    }
+
+
+    .aboutus-title,
+    .aboutus .border {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .aboutus .aboutus-text {
+        margin-bottom: 30px;
+    }
+
+    .aboutus-desc {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .aboutus-desc p {
+        float: left;
+        padding: 0;
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .aboutus-desc button {
+        width: 100%;
+        float: right;
+        margin-top: 0;
+    }
+
+    .aboutus-services {
+        width: 100%;
+        display: block;
+    }
+
+    .aboutus-service-box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* paralax */
+
+    .paralax-title {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .paralax-quote .quote {
+        font-size: 22px;
+    }
+
+    .paralax .paralax-quote {
+        max-width: 280px;
+    }
+
+    .writer {
+        text-align: center !important;
+    }
+
+    /* state-excerpt */
+
+    .state-excerpt {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .state-count {
+        display: unset;
+    }
+}
