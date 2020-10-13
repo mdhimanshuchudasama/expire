@@ -4,7 +4,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-
 }
 
 .content {
@@ -18,6 +17,7 @@
 /* -------------------
         Header
 ----------------------*/
+
 .navbar {
     background: #3d4148;
     font-family: 'Raleway', sans-serif;
@@ -96,10 +96,119 @@ nav ul li a.active {
 /*--------------------
         Banner
 ----------------------*/
+.featured-banner {
+    font-family: 'Raleway';
+}
 
 .banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 220px 0;
     width: 100%;
-    background: #fff;
+    /* height: 910px; */
+    position: relative;
+    /* height: 100vh; */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 910px; */
+}
+
+.banner-1,
+.banner-2,
+.banner-3 {
+    background: url(../images/pngs/banner-frame.png);
+}
+
+
+.featured-banner .owl-carousel .owl-stage-outer {
+    /* overflow: initial; */
+}
+
+.banner-content {
+    /* position: absolute; */
+    left: ;
+}
+
+.banner-heading h1 {
+    font-size: 70px;
+    color: #fafafa;
+    font-weight: 600;
+}
+
+.banner-line {
+    margin: 10px 0;
+    width: 201px;
+}
+
+.banner-info p {
+    font-size: 50px;
+    font-weight: 300;
+    color: #fafafa;
+    max-width: 910px;
+}
+
+.banner-btn .explore,
+.banner-btn .learn-more {
+    padding: 15px 30px;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.banner-btn .explore {
+    background: #ff3c1f;
+    border: 1px solid #ff3c1f;
+    margin-right: 20px;
+}
+
+.banner-btn .learn-more {
+    border: 1px solid #fafafa;
+    background: #3d4148;
+}
+
+.banner-carousel .owl-nav,
+.banner-carousel .owl-dots {
+    display: inline-block !important;
+}
+
+.banner-carousel .owl-prev,
+.banner-carousel .owl-next {
+    color: #656d78 !important;
+    font-size: 80px !important;
+    position: absolute;
+    top: 300px;
+}
+
+.banner-carousel .owl-prev {
+    left: 50px;
+}
+
+.banner-carousel .owl-next {
+    right: 50px;
+}
+
+.banner-carousel .owl-dots {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner-carousel button.owl-dot {
+    font-size: 50px !important;
+    background: #fafafa !important;
+    position: absolute;
+    bottom: 50px;
+    height: 15px;
+    width: 15px;
 }
 
 /* --------------------
@@ -140,8 +249,8 @@ nav ul li a.active {
 }
 
 .aboutus-desc {
-    width: 25%;
-    padding: 0 10px;
+    width: 20%;
+    padding-right: 10px;
     padding-bottom: 0;
 }
 
@@ -163,35 +272,32 @@ nav ul li a.active {
 }
 
 .aboutus-services {
-    width: 75%;
+    width: 80%;
     display: flex;
 }
 
 .aboutus-service-box {
-    width: 33.33%;
+    width: 270px;
+    height: 270px;
     margin: 0 10px;
-    border: 1px solid #3d4148;
+    background: url(../images/pngs/abtus-bg.png);
     padding: 10px;
 }
 
-.aboutus .fa-folder {
-    color: #fff;
-    font-size: 500px;
-}
-
-.aboutus-services .fa-inverse {
-    color: #000000;
-    font-size: 20px;
-}
 
 .aboutus .service-heading {
     display: flex;
     flex-wrap: wrap;
 }
 
+.service-heading {
+    margin-top: 10px;
+}
+
 .service-heading .service-icon {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 200;
+    margin-right: 10px;
 }
 
 .service-heading .service-title h1 {
@@ -200,10 +306,13 @@ nav ul li a.active {
     font-weight: 700;
     padding: 5px;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .aboutus .service-desc p {
     font-size: 14px;
+    color: #4e5860;
+    padding: 5px;
 }
 
 
@@ -270,7 +379,6 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-
 }
 
 .state-excerpt {
@@ -297,23 +405,24 @@ nav ul li a.active {
     font-weight: 300;
 }
 
+
 /*---------------------
         Blog
 -----------------------*/
 
-.blog {
+.blog-posts {
     text-align: center;
     margin: 80px 0;
+    font-family: 'Raleway';
 }
 
-.blog-title {
-    font-family: 'Raleway';
+.blog-posts-title {
     font-size: 45px;
     color: #272d32;
     font-weight: 600;
 }
 
-.blog .border {
+.blog-posts .border {
     max-width: 150px;
     margin: 20px auto;
     position: relative;
@@ -321,11 +430,122 @@ nav ul li a.active {
     padding: 1px;
 }
 
-.blog .blog-text {
+.blog-posts .blog-posts-text {
     margin: 20px 0 50px 0;
     font-family: 'Open Sans', sans-serif;
 }
 
+.blog-carousel {
+    width: 1140px;
+    margin: auto;
+}
+
+.recent-blogs {
+    display: flex;
+    justify-content: center;
+}
+
+.recent-blog {
+    text-align: center;
+    width: 370px;
+    height: 670px;
+    background: url(../images/pngs/blog-post-bg.png) no-repeat;
+}
+
+.blog-content {
+    padding: 20px;
+    padding-top: 250px;
+    text-align: left;
+}
+
+.blog-title h1 {
+    color: #656d78;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.blog-title h1:hover {
+    color: #ff3c1f;
+}
+
+.blog-detail {
+    display: flex;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.blog-author,
+.blog-post-date,
+.blog-comment {
+    margin-right: 15px;
+}
+
+.blog-author h2,
+.blog-post-date h2,
+.blog-comment h2 {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #656d78;
+    font-weight: 400;
+}
+
+.blog-author span,
+.blog-post-date span,
+.blog-comment span {
+    color: #d14b3a;
+    margin-right: 10px;
+}
+
+.blog-desc p {
+    font-size: 14px;
+    color: #4e5860;
+    line-height: 1.5em;
+}
+
+.read-more button {
+    color: #d14b3a;
+    background: #fff;
+    border: 1px solid #d14b3a;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px 0 10px 0;
+}
+
+.read-more button:hover {
+    background: #d14b3a;
+    color: #fff;
+}
+
+.recent-blogs .owl-item {
+    width: 370px !important;
+}
+
+.recent-blogs .owl-nav {
+    display: block !important;
+    font-size: 50px;
+}
+
+.recent-blogs .owl-nav .owl-prev {
+    float: left;
+    margin-left: -30px;
+    margin-top: -400px;
+    color: #656d78 !important;
+}
+
+.recent-blogs .owl-nav .owl-next {
+    float: right;
+    margin-right: -20px;
+    margin-top: -400px;
+    color: #656d78 !important;
+}
+
+.recent-blogs .owl-nav .owl-prev:hover,
+.recent-blogs .owl-nav .owl-next:hover {
+    color: #d14b3a !important;
+}
 
 /*---------------------- 
         Portfolio
@@ -366,12 +586,58 @@ nav ul li a.active {
     width: 25%;
     box-sizing: border-box;
     position: relative;
-    background: #656d78;
     height: 180px;
     margin: auto;
+    background: #656d78;
     overflow: hidden;
     border: 1px solid #797d83;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.8s ease;
+}
 
+.portfolio-box:hover {
+    background: #52575d !important;
+}
+
+.portfolio-box:hover .portfolio-content,
+.portfolio-box:hover>.hover {
+    display: block;
+}
+
+.portfolio-content {
+    padding: 20px 20px;
+}
+
+.portfolio-content,
+.portfolio .hover {
+    display: none;
+}
+
+.portfolio-content h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.portfolio-content p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.portfolio .hover {
+    position: relative;
+    z-index: 11111;
+    /* display: none; */
+}
+
+.hover img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: -87px;
 }
 
 .portfolio-box:hover {
@@ -379,21 +645,9 @@ nav ul li a.active {
     transition: 0.2s;
 }
 
-.portfolio .fa-folder {
-    position: absolute;
-    transform: scaleX(-1) rotate(180deg) scale(22, 16);
-    color: #656d78;
-    margin-top: 46px !important;
-    border-radius: 0 0 0 0;
-}
-
-.portfolio-box:hover .portfolio .fa-folder {
-    color: #51565c;
-}
-
 .portfolio-box span.icons {
     color: #656d78;
-    bottom: 15px;
+    bottom: -70px;
     right: 35px;
     position: absolute;
 }
@@ -402,7 +656,7 @@ nav ul li a.active {
     margin-left: 25px;
 }
 
-.portfolio-box:hover span.icons svg:hover {
+.portfolio-box span.icons svg:hover {
     color: #d14b3a;
     cursor: pointer;
 }
@@ -413,7 +667,14 @@ nav ul li a.active {
     border: 1px solid #d14b3a;
     text-transform: uppercase;
     padding: 10px 20px;
+    cursor: pointer;
 }
+
+.portfolio-btn button:hover {
+    background: #d14b3a;
+    color: #fff;
+}
+
 
 /*--------------------- 
         Partners
@@ -472,11 +733,12 @@ nav ul li a.active {
 }
 
 .testimonial-box-1 {
-    width: 49%;
+    width: 570px;
+    height: 260px;
     font-family: 'Raleway';
     float: left;
     display: flex;
-    background: #fff;
+    background: url(../images/pngs/t1-bg.png);
     margin-top: 150px;
 }
 
@@ -504,6 +766,7 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
+    margin-top: 40px;
 }
 
 .client-info h1 {
@@ -528,27 +791,59 @@ nav ul li a.active {
 }
 
 .testimonial-box-2 {
-    background: #fff;
-    width: 49%;
+    background: url(../images/pngs/t2-bg.png);
+    width: 570px;
+    height: 350px;
     float: right;
     margin-left: 30px;
-    margin-top: 50px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    position: relative;
     font-family: 'Raleway';
 }
 
-.t2-expand {
+.t2-expand,
+.t2-hover,
+.t2-inactive {
     font-weight: 600;
-    padding: 10px;
+    padding: 24px;
+    padding-bottom: 0;
     color: #303030;
     font-size: 14px;
+}
+
+.t2-hover,
+.t2-inactive {
+    background: url(../images/pngs/t2-inactive-bg.png);
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.t2-hover p,
+.t2-inactive p {
+    position: absolute;
+    bottom: 10px;
+}
+
+.t2-expand span,
+.t2-hover span,
+.t2-inactive span {
+    margin-right: 10px;
 }
 
 .t2-desc {
     font-size: 14px;
     line-height: 1.5em;
-    padding: 25px;
+    padding: 42px 30px;
     font-style: italic;
     color: #656d78;
+}
+
+.t2-hover p:hover,
+.t2-inactive p:hover {
+    color: #d14b3a;
+    cursor: pointer;
 }
 
 
@@ -558,7 +853,6 @@ nav ul li a.active {
 
 .contactus {
     /* margin: 80px 0; */
-    background: url(../images/contactus-bg.jpg);
 }
 
 .contactus .inner-width {
@@ -568,6 +862,7 @@ nav ul li a.active {
 .contactus-title {
     font-family: 'Raleway';
     font-size: 45px;
+    background: url(../images/pngs/contact-us-bg.png);
     color: #272d32;
     font-weight: 600;
 }
@@ -643,7 +938,6 @@ textarea {
 #name,
 #email {
     width: 50%;
-
 }
 
 #name {
@@ -655,6 +949,7 @@ textarea {
     width: 100%;
 }
 
+
 /*----------------------
         Google Map
 ------------------------*/
@@ -662,7 +957,7 @@ textarea {
 .google-map {
     background: url(../images/map.jpg);
     background-size: cover;
-    height: 320px;
+    height: 500px;
     text-align: center;
     position: relative;
     font-family: 'Open Sans', sans-serif;
@@ -670,16 +965,16 @@ textarea {
 
 .map-marker {
     position: absolute;
-    top: 130px;
-    right: 440px;
+    top: 200px;
+    right: 500px;
 }
 
 .marker-location {
     padding: 10px 20px;
     position: absolute;
     background: #fff;
-    top: 110px;
-    right: 280px;
+    top: 130px;
+    right: 350px;
 }
 
 .marker-location h1 {
@@ -693,6 +988,7 @@ textarea {
     color: #303030;
 }
 
+
 /* ---------------------
         Footer
 ------------------------*/
@@ -704,7 +1000,6 @@ textarea {
 
 .footer .inner-width {
     display: flex;
-
     /* flex-wrap: wrap; */
 }
 
@@ -763,6 +1058,7 @@ textarea {
     color: #fff;
     font-weight: 400;
 }
+
 
 /* ----------------------
         Responsive 
@@ -832,7 +1128,6 @@ textarea {
     }
 
     /* about us */
-
     .aboutus-desc {
         width: 100%;
         display: flex;
@@ -859,7 +1154,6 @@ textarea {
     }
 
     /* paralax */
-
     .paralax-title {
         font-size: 40px;
         font-weight: 500;
@@ -874,7 +1168,6 @@ textarea {
     }
 
     /* state-excerpt */
-
     .state-excerpt {
         width: 50%;
         padding: 20px;
@@ -892,7 +1185,6 @@ textarea {
     }
 
     /* Header */
-
     label.logo {
         font-size: 30px;
     }
@@ -934,7 +1226,6 @@ textarea {
     }
 
     /* about us */
-
     .aboutus .aboutus-text {
         margin-bottom: 30px;
     }
@@ -968,7 +1259,6 @@ textarea {
     }
 
     /* paralax */
-
     .paralax-title {
         font-size: 40px;
         font-weight: 500;
@@ -983,7 +1273,6 @@ textarea {
     }
 
     /* state-excerpt */
-
     .state-excerpt {
         width: 50%;
         padding: 20px;
@@ -998,7 +1287,6 @@ textarea {
 @media screen and (max-width:575.98px) and (min-width:411px) {
 
     /* Header */
-
     label.logo {
         font-size: 30px;
     }
@@ -1040,7 +1328,6 @@ textarea {
     }
 
     /* about us */
-
     .aboutus-title,
     .aboutus .border {
         text-align: center;
@@ -1081,7 +1368,6 @@ textarea {
     }
 
     /* paralax */
-
     .paralax-title {
         font-size: 40px;
         font-weight: 500;
@@ -1096,7 +1382,6 @@ textarea {
     }
 
     /* state-excerpt */
-
     .state-excerpt {
         width: 50%;
         padding: 20px;
@@ -1152,18 +1437,15 @@ textarea {
     }
 
     /* about us */
-
     .aboutus-title {
         font-size: 40px;
     }
-
 
     .aboutus-title,
     .aboutus .border {
         text-align: center;
         margin: 0 auto;
     }
-
 
     .aboutus .aboutus-text {
         margin-bottom: 30px;
@@ -1199,7 +1481,6 @@ textarea {
     }
 
     /* paralax */
-
     .paralax-title {
         font-size: 40px;
         font-weight: 500;
@@ -1218,7 +1499,6 @@ textarea {
     }
 
     /* state-excerpt */
-
     .state-excerpt {
         width: 100%;
         padding: 30px;
