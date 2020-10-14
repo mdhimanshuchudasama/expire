@@ -227,15 +227,14 @@ nav ul li a.active {
     background: url(../images/pngs/abtusbg.png);
     background-size: cover;
     background-position: center center;
-    height: auto;
     position: relative;
-    height: 700px;
+    height: 730px;
     top: -30px;
     z-index: 1111;
 }
 
 .aboutus .inner-width {
-    padding: 60px 0;
+    padding: 107px 0;
 }
 
 .aboutus-container {
@@ -252,6 +251,7 @@ nav ul li a.active {
 
 .aboutus .border {
     max-width: 200px;
+    margin: 10px 0;
     position: relative;
     background: linear-gradient(to right, #ef402a, #4e5860);
     padding: 1px;
@@ -259,28 +259,32 @@ nav ul li a.active {
 }
 
 .aboutus .aboutus-text {
+    font-size: 18px;
     margin: 20px 0;
+    color: #4e5860;
 }
 
 .aboutus-desc {
-    width: 20%;
+    width: 25%;
     padding-right: 10px;
     padding-bottom: 0;
 }
 
 .aboutus-desc p {
-    font-size: 28px;
+    font-size: 30px;
     color: #4e5860;
-    padding: 0 10px 0 10px;
-    line-height: 1.2em;
+    padding: 0 10px;
+    padding-right: 30px;
+    line-height: 1.4em;
+    word-spacing: 1px;
 }
 
 .aboutus-desc button {
     background: #ef402a;
     color: #fff;
     text-transform: uppercase;
-    /* font-size: 16px;
-    letter-spacing: 1px; */
+    font-size: 16px;
+    width: 90%;
     padding: 15px 20px;
     border: none;
     margin-top: 17px;
@@ -288,8 +292,9 @@ nav ul li a.active {
 }
 
 .aboutus-services {
-    width: 80%;
+    width: 75%;
     display: flex;
+    justify-content: center;
 }
 
 .aboutus-service-box {
@@ -297,6 +302,8 @@ nav ul li a.active {
     height: 270px;
     margin: 0 10px;
     background: url(../images/pngs/abtus-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 10px;
 }
 
@@ -473,6 +480,13 @@ nav ul li a.active {
 .recent-blogs {
     display: flex;
     justify-content: center;
+}
+
+.recent-blog-content {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto !important;
 }
 
 .recent-blog {
@@ -887,9 +901,9 @@ nav ul li a.active {
     background-size: cover;
     background-position: center center;
     position: relative;
-    top: -140px;
-    height: 835px;
-    z-index: 111;
+    top: -30px;
+    height: 912px;
+    z-index: 1;
 }
 
 .contactus .inner-width {
@@ -997,7 +1011,7 @@ textarea {
     height: 500px;
     text-align: center;
     position: relative;
-    top: -170px;
+    top: -60px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -1104,7 +1118,7 @@ textarea {
 
 @media screen and (min-width:1200px) {
     .content {
-        max-width: 1170px;
+        max-width: 1140px;
     }
 
     .banner-carousel .owl-prev {
@@ -1119,38 +1133,6 @@ textarea {
 @media screen and (max-width:1199.98px) and (min-width:992px) {
     .content {
         max-width: 960px;
-    }
-
-    /* about us */
-    .aboutus-desc button {
-        margin-top: 0;
-    }
-
-    .aboutus-desc {
-        width: 100%;
-        display: flex;
-        padding: 0;
-        padding-bottom: 30px;
-    }
-
-    .aboutus-desc p {
-        width: 60%;
-    }
-
-    .aboutus-desc button {
-        width: 40%;
-    }
-
-    .aboutus-services {
-        width: 100%;
-    }
-
-    .aboutus-service-box {
-        margin: auto;
-    }
-
-    .aboutus .service-desc p {
-        line-height: 1.5em;
     }
 
     /* banner */
@@ -1188,6 +1170,48 @@ textarea {
         margin: 0 5px;
     }
 
+    /* about us */
+    .aboutus {
+        top: -22px;
+    }
+
+    .aboutus-desc button {
+        margin-top: 0;
+    }
+
+    .aboutus-desc {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .aboutus-desc p {
+        width: 60%;
+    }
+
+    .aboutus-desc button {
+        width: 40%;
+    }
+
+    .aboutus-services {
+        width: 100%;
+    }
+
+    .aboutus-service-box {
+        margin: auto;
+    }
+
+    .aboutus .service-desc p {
+        line-height: 1.5em;
+    }
+
+    /* paralax */
+
+    .paralax {
+        top: -44px;
+    }
+
     /* portfolio */
 
     .portfolio-box {
@@ -1197,6 +1221,8 @@ textarea {
     .portfolio .hover {
         bottom: 20px;
     }
+
+
 }
 
 @media screen and (max-width:991.98px) and (min-width:768px) {
@@ -1223,8 +1249,8 @@ textarea {
 
     nav ul li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 40px 0;
+        line-height: unset;
     }
 
     nav ul li a {
@@ -1246,7 +1272,61 @@ textarea {
         display: block;
     }
 
+    /* banner */
+    .banner {
+        padding-bottom: 120px;
+        padding-top: 80px;
+    }
+
+    .banner-heading h1 {
+        font-size: 50px;
+    }
+
+    .banner-line {
+        width: 150px;
+    }
+
+    .banner-info p {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .banner-btn .explore,
+    .banner-btn .learn-more {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .banner-carousel .owl-dots .owl-dot {
+        height: 15px !important;
+        width: 15px !important;
+        margin: 0 5px;
+    }
+
+    .banner-carousel .owl-dots {
+        bottom: 40px;
+    }
+
+    .banner-carousel .owl-prev {
+        left: 0;
+        top: 130px;
+        font-size: 60px !important;
+    }
+
+    .banner-carousel .owl-next {
+        right: 0;
+        top: 130px;
+        font-size: 60px !important;
+    }
+
     /* about us */
+
+    .aboutus {
+        height: auto;
+        top: -15px;
+    }
+
     .aboutus-desc {
         width: 100%;
         display: flex;
@@ -1257,22 +1337,55 @@ textarea {
 
     .aboutus-desc p {
         float: left;
+        width: 65%;
+        font-size: 28px;
+        word-spacing: unset;
+        letter-spacing: normal;
+        padding-right: 0;
     }
 
     .aboutus-desc button {
-        max-width: 30%;
-        width: 100%;
-        padding: 10px;
+        max-width: 35%;
+        /* width: 100%; */
+        padding: 20px 10px;
         margin-right: 10px;
         float: right;
-        margin-top: 0;
+        margin: auto 0;
     }
 
     .aboutus-services {
         width: 100%;
     }
 
+    .aboutus-service-box {
+        width: 217px;
+        height: 217px;
+    }
+
+    .service-heading {
+        margin-top: 5px;
+    }
+
+    .service-heading .service-icon {
+        font-size: 30px;
+    }
+
+    .service-heading .service-title h1 {
+        font-size: 16px;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .aboutus .service-desc p {
+        font-size: 11px;
+    }
+
     /* paralax */
+
+    .paralax {
+        top: -30px;
+    }
+
     .paralax-title {
         font-size: 40px;
         font-weight: 500;
@@ -1326,6 +1439,7 @@ textarea {
     }
 
     /* Header */
+
     label.logo {
         font-size: 30px;
     }
@@ -1344,8 +1458,8 @@ textarea {
 
     nav ul li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 40px 0;
+        line-height: unset;
     }
 
     nav ul li a {
@@ -1367,9 +1481,68 @@ textarea {
         display: block;
     }
 
+    /* banner */
+    .banner {
+        padding-bottom: 120px;
+        padding-top: 80px;
+    }
+
+    .banner-heading h1 {
+        font-size: 50px;
+    }
+
+    .banner-line {
+        width: 150px;
+    }
+
+    .banner-info p {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .banner-btn .explore,
+    .banner-btn .learn-more {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .banner-carousel .owl-dots .owl-dot {
+        height: 15px !important;
+        width: 15px !important;
+        margin: 0 5px;
+    }
+
+    .banner-carousel .owl-dots {
+        bottom: 40px;
+    }
+
+    .banner-carousel .owl-prev {
+        left: 0;
+        top: 130px;
+        font-size: 60px !important;
+    }
+
+    .banner-carousel .owl-next {
+        right: 0;
+        top: 130px;
+        font-size: 60px !important;
+    }
+
+
     /* about us */
+
+    .aboutus {
+        height: auto;
+        top: -10px;
+    }
+
+    .aboutus .inner-width {
+        padding: 40px 0;
+    }
+
     .aboutus .aboutus-text {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .aboutus-desc {
@@ -1382,6 +1555,7 @@ textarea {
         float: left;
         padding: 0;
         padding-bottom: 10px;
+        font-size: 28px;
     }
 
     .aboutus-desc button {
@@ -1396,14 +1570,32 @@ textarea {
     }
 
     .aboutus-service-box {
-        width: 100%;
-        margin: 20px 0;
+        width: 300px;
+        height: 300px;
+        margin: 10px auto;
+    }
+
+    .service-heading {
+        margin-top: 20px;
+    }
+
+    .aboutus .service-desc p {
+        font-size: 14px;
+        padding: 10px;
     }
 
     /* paralax */
+    .paralax {
+        top: -20px;
+    }
+
     .paralax-title {
         font-size: 40px;
         font-weight: 500;
+    }
+
+    .paralax .paralax-text {
+        font-size: 16px;
     }
 
     .paralax-quote .quote {
@@ -1415,8 +1607,13 @@ textarea {
     }
 
     /* state-excerpt */
+    .state-excerpts {
+        top: -20px;
+    }
+
     .state-excerpt {
         width: 50%;
+
         padding: 20px;
         text-align: center;
     }
@@ -1474,8 +1671,8 @@ textarea {
 
     nav ul li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 40px 0;
+        line-height: unset;
     }
 
     nav ul li a {
@@ -1497,7 +1694,74 @@ textarea {
         display: block;
     }
 
+    /* banner */
+    .banner {
+        padding-bottom: 120px;
+        padding-top: 80px;
+    }
+
+    .banner-heading h1 {
+        font-size: 50px;
+    }
+
+    .banner .content {
+        text-align: center;
+    }
+
+    .banner-line {
+        width: 150px;
+        margin: 10px auto;
+    }
+
+    .banner-info p {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .banner-btn .explore,
+    .banner-btn .learn-more {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .banner-btn .explore {
+        margin-right: 10px;
+    }
+
+    .banner-carousel .owl-dots .owl-dot {
+        height: 15px !important;
+        width: 15px !important;
+        margin: 0 5px;
+    }
+
+    .banner-carousel .owl-dots {
+        bottom: 40px;
+    }
+
+    .banner-carousel .owl-prev {
+        left: 0;
+        top: 130px;
+        font-size: 60px !important;
+    }
+
+    .banner-carousel .owl-next {
+        right: 0;
+        top: 130px;
+        font-size: 60px !important;
+    }
+
     /* about us */
+    .aboutus {
+        height: auto;
+        top: -10px;
+    }
+
+    .aboutus .inner-width {
+        padding: 30px 0;
+    }
+
     .aboutus-title,
     .aboutus .border {
         text-align: center;
@@ -1505,7 +1769,8 @@ textarea {
     }
 
     .aboutus .aboutus-text {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        font-size: 15px;
     }
 
     .aboutus-desc {
@@ -1525,6 +1790,7 @@ textarea {
         width: 100%;
         float: right;
         margin-top: 0;
+        padding: 10px 20px;
     }
 
     .aboutus-services {
@@ -1533,18 +1799,39 @@ textarea {
     }
 
     .aboutus-service-box {
-        width: 100%;
-        margin: 20px 0;
+        width: 300px;
+        height: 300px;
+        margin: 10px auto;
+    }
+
+    .service-heading {
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+    .aboutus .service-desc p {
+        font-size: 14px;
+        padding: 10px;
     }
 
     /* paralax */
-    .paralax-title {
+
+    .paralax {
+        top: -20px;
+        padding: 50px 0;
+    }
+
+    .paralax .paralax-title {
         font-size: 40px;
         font-weight: 500;
     }
 
+    .paralax .paralax-text {
+        margin-bottom: 20px;
+    }
+
     .paralax-quote .quote {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .writer {
@@ -1552,9 +1839,14 @@ textarea {
     }
 
     /* state-excerpt */
+
+    .state-excerpts {
+        top: -20px;
+    }
+
     .state-excerpt {
-        width: 50%;
-        padding: 20px;
+        width: 100%;
+        padding: 25px;
         text-align: center;
     }
 
@@ -1563,6 +1855,10 @@ textarea {
     }
 
     /* portfolio */
+
+    .portfolio {
+        margin: 0;
+    }
 
     .portfolio-container {
         justify-content: center;
@@ -1605,8 +1901,8 @@ textarea {
 
     nav ul li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 56px 0;
+        line-height: 20px;
     }
 
     nav ul li a {
@@ -1628,9 +1924,73 @@ textarea {
         display: block;
     }
 
+    /* banner */
+    .banner {
+        padding-bottom: 120px;
+        padding-top: 80px;
+    }
+
+    .banner-heading h1 {
+        font-size: 50px;
+    }
+
+    .banner .content {
+        text-align: center;
+    }
+
+    .banner-line {
+        width: 150px;
+        margin: 10px auto;
+    }
+
+    .banner-info p {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .banner-btn .explore,
+    .banner-btn .learn-more {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .banner-btn .explore {
+        margin-right: 0;
+    }
+
+    .banner-carousel .owl-dots .owl-dot {
+        height: 12px !important;
+        width: 12px !important;
+        margin: 0 5px;
+    }
+
+    .banner-carousel .owl-dots {
+        bottom: 40px;
+    }
+
+    .banner-carousel .owl-prev {
+        left: 0;
+        top: 130px;
+        font-size: 60px !important;
+    }
+
+    .banner-carousel .owl-next {
+        right: 0;
+        top: 130px;
+        font-size: 60px !important;
+    }
+
+
     /* about us */
-    .aboutus-title {
-        font-size: 40px;
+    .aboutus {
+        height: auto;
+        top: -10px;
+    }
+
+    .aboutus .inner-width {
+        padding: 30px 0;
     }
 
     .aboutus-title,
@@ -1639,8 +1999,13 @@ textarea {
         margin: 0 auto;
     }
 
+    .aboutus-title {
+        font-size: 40px;
+    }
+
     .aboutus .aboutus-text {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        font-size: 15px;
     }
 
     .aboutus-desc {
@@ -1660,6 +2025,7 @@ textarea {
         width: 100%;
         float: right;
         margin-top: 0;
+        padding: 10px 20px;
     }
 
     .aboutus-services {
@@ -1668,22 +2034,24 @@ textarea {
     }
 
     .aboutus-service-box {
-        width: 100%;
-        margin: 20px 0;
+        width: 270px;
+        height: 270px;
+        margin: 10px auto;
     }
 
     /* paralax */
-    .paralax-title {
+    .paralax {
+        top: -20px;
+        padding: 40px 0;
+    }
+
+    .paralax .paralax-title {
         font-size: 40px;
         font-weight: 500;
     }
 
     .paralax-quote .quote {
-        font-size: 22px;
-    }
-
-    .paralax .paralax-quote {
-        max-width: 280px;
+        font-size: 18px;
     }
 
     .writer {
@@ -1691,9 +2059,13 @@ textarea {
     }
 
     /* state-excerpt */
+    .state-excerpts {
+        top: -20px;
+    }
+
     .state-excerpt {
         width: 100%;
-        padding: 30px;
+        padding: 30px 0;
         text-align: center;
     }
 
@@ -1703,9 +2075,18 @@ textarea {
 
     /* portfolio */
 
+    .portfolio {
+        margin: 0;
+    }
+
+    .portfolio-title {
+        font-size: 40px;
+    }
+
     .portfolio-container {
         justify-content: center;
     }
+
 
     .portfolio-box {
         width: 80%;
