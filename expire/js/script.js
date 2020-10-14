@@ -14,24 +14,26 @@ $(document).ready(function(){
 
     // Blog Owl carousel 
     $('.recent-blogs').owlCarousel({
-        loop:true,
+        // loop:true,
         margin:10,
-        autoplayTime: 2000,
-        autoplayHoverPause:true,
+        // autoplayTime: 2000,
+        // autoplayHoverPause:true,
         responsiveClass:true,
         responsive:{
             0:{
                 items: 1,
-                nav: true
+                nav: true,
+                // loop:true
             },
-            600:{
-                items: 2,
-                nav: false
+            968:{
+                items: 1,
+                nav: true,
+                // loop:true
             },
-            1000:{
+            1200:{
                 items: 3,
                 nav: true,
-                loop: false
+                // loop: true
             }
         }
     }); 
