@@ -26,7 +26,7 @@ $(document).ready(function(){
                 // loop:true
             },
             968:{
-                items: 1,
+                items: 2,
                 nav: true,
                 // loop:true
             },
