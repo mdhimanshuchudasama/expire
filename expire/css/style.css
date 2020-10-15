@@ -904,12 +904,12 @@ nav ul li a.active {
     background-position: center center;
     position: relative;
     top: -30px;
-    height: 912px;
+    height: 865px;
     z-index: 1;
 }
 
 .contactus .inner-width {
-    padding: 155px 0;
+    padding: 170px 0;
 }
 
 
@@ -1008,27 +1008,32 @@ textarea {
 ------------------------*/
 
 .google-map {
+    width: 100%;
     background: url(../images/map.jpg);
-    background-size: cover;
-    height: 500px;
-    text-align: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     position: relative;
+    height: 500px;
     top: -60px;
     font-family: 'Open Sans', sans-serif;
 }
 
-.map-marker {
-    position: absolute;
-    top: 200px;
-    right: 500px;
+.google-map .inner-width {
+    display: flex;
+}
+
+.map-marker img {
+    position: relative;
+    top: 195px;
+    left: 500px;
 }
 
 .marker-location {
-    padding: 10px 20px;
-    position: absolute;
+    padding: 10px 10px;
     background: #fff;
-    top: 130px;
-    right: 350px;
+    position: relative;
+    top: 120px;
+    left: 690px;
 }
 
 .marker-location h1 {
@@ -1050,6 +1055,22 @@ textarea {
 .footer {
     font-family: 'Raleway';
     background: #303030;
+    margin-top: -60px;
+}
+
+.to-top span {
+    float: right;
+    position: relative;
+    font-size: 20px;
+    top: -15px;
+    right: 80px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: #57595b;
+}
+
+.to-top span:hover {
+    color: #fafafa;
 }
 
 .footer .inner-width {
@@ -1070,13 +1091,17 @@ textarea {
 
 .social-icons ul li {
     margin: auto 0;
-    margin-right: 20px;
+    margin-right: 30px;
     /* margin-top: 43.4px; */
 }
 
 .social-icons ul li a {
     font-size: 14px;
     color: #fff;
+}
+
+.social-icons ul li a:hover {
+    color: #d14b3a;
 }
 
 .footer-logo {
@@ -1112,6 +1137,12 @@ textarea {
     color: #fff;
     font-weight: 400;
 }
+
+.footer .copyright p span {
+    margin-right: 5px;
+}
+
+
 
 
 /* ----------------------
@@ -1261,8 +1292,29 @@ textarea {
 
     .google-map {
         top: -44px;
+        height: 460px;
     }
 
+    .map-marker img {
+        top: 195px;
+        left: 380px;
+    }
+
+    .marker-location {
+        top: 130px;
+        left: 560px;
+    }
+
+    /* footer */
+    .footer {
+        top: -44px;
+    }
+
+    .to-top span {
+        top: -5px;
+        right: 50px;
+        padding: 5px 12px;
+    }
 }
 
 @media screen and (max-width:991.98px) and (min-width:768px) {
@@ -1525,6 +1577,37 @@ textarea {
     /* google-map */
     .google-map {
         top: -30px;
+        height: 350px;
+    }
+
+    .map-marker img {
+        top: 155px;
+        left: 290px;
+        width: 35px;
+    }
+
+    .marker-location {
+        top: 120px;
+        left: 450px;
+    }
+
+    .marker-location h1 {
+        font-size: 15px;
+    }
+
+    .marker-location p {
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    .footer {
+        margin-top: -30px;
+    }
+
+    .to-top span {
+        right: 40px;
+        padding: 5px 12px;
     }
 }
 
@@ -1829,6 +1912,64 @@ textarea {
     /* google-map */
     .google-map {
         top: -30px;
+        height: 330px;
+    }
+
+    .map-marker img {
+        top: 155px;
+        left: 175px;
+        width: 25px;
+    }
+
+    .marker-location {
+        top: 115px;
+        left: 320px;
+    }
+
+    .marker-location h1 {
+        font-size: 15px;
+    }
+
+    .marker-location p {
+        font-size: 12px;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: -30px;
+    }
+
+    .to-top span {
+        right: 40px;
+        padding: 5px 11px;
+    }
+
+    .footer .inner-width {
+        display: unset;
+        text-align: center;
+    }
+
+    .social-icons {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons ul {
+        float: unset;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer .copyright {
+        width: 100%;
+        float: unset;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 20px;
     }
 }
 
@@ -2162,6 +2303,65 @@ textarea {
     /* google-map */
     .google-map {
         top: -30px;
+        height: 270px;
+    }
+
+    .map-marker img {
+        top: 130px;
+        left: 115px;
+        width: 25px;
+    }
+
+    .marker-location {
+        top: 90px;
+        left: 240px;
+    }
+
+    .marker-location h1 {
+        font-size: 13px;
+    }
+
+    .marker-location p {
+        font-size: 10px;
+    }
+
+
+    /* footer */
+    .to-top span {
+        right: 30px;
+        padding: 5px 10px;
+    }
+
+    .footer {
+        margin-top: -30px;
+    }
+
+    .footer .inner-width {
+        display: unset;
+        text-align: center;
+    }
+
+    .social-icons {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons ul {
+        float: unset;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer .copyright {
+        width: 100%;
+        float: unset;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 20px;
     }
 }
 
@@ -2487,7 +2687,7 @@ textarea {
     }
 
     .contact-type {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         margin-bottom: 20px;
         border: 1px solid #4e5860;
@@ -2495,7 +2695,7 @@ textarea {
     }
 
     .contact-form {
-        width: 80%;
+        width: 85%;
     }
 
     input[type="text"],
@@ -2507,5 +2707,68 @@ textarea {
 
     .google-map {
         top: -20px;
+        height: 270px;
+    }
+
+    .map-marker img {
+        top: 115px;
+        left: 60px;
+        width: 25px;
+    }
+
+    .marker-location {
+        top: 80px;
+        left: 190px;
+    }
+
+    .marker-location h1 {
+        font-size: 13px;
+    }
+
+    .marker-location p {
+        font-size: 10px;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: -20px;
+    }
+
+    .to-top span {
+        right: 30px;
+        padding: 5px 10px;
+    }
+
+
+    .footer .inner-width {
+        display: unset;
+        text-align: center;
+    }
+
+    .social-icons {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons ul {
+        float: unset;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .social-icons ul li {
+        margin-right: 20px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer .copyright {
+        width: 100%;
+        float: unset;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 20px;
     }
 }
