@@ -218,9 +218,10 @@ nav ul li a.active {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     background: url(../images/pngs/abtusbg.png);
-    background-position: center center;
+    background-size: 100% 100%;
+    background-position: center;
     position: relative;
-    height: 820px;
+    /* height: 700px; */
     top: -30px;
     z-index: 1111;
 }
@@ -1136,9 +1137,10 @@ textarea {
 /* ----------------------
         Responsive 
 -------------------------*/
-@media screen and (min-width:1200) and (max-width:1500px) {
+@media screen and (min-width:1500px) {
     .aboutus {
         height: 727px;
+        background-size: 100% auto;
     }
 
     .contactus {
@@ -1204,6 +1206,7 @@ textarea {
     .aboutus {
         top: -22px;
         height: 700px;
+        background-size: unset;
     }
 
     .aboutus-desc button {
@@ -1471,6 +1474,7 @@ textarea {
     .aboutus {
         height: 670px;
         top: -15px;
+        background-size: unset;
     }
 
     .aboutus .inner-width {
@@ -1771,7 +1775,7 @@ textarea {
 
     /* about us */
     .aboutus {
-        height: auto;
+        background-size: auto 100%;
         top: -10px;
     }
 
@@ -2163,7 +2167,7 @@ textarea {
 
     /* about us */
     .aboutus {
-        height: auto;
+        background-size: auto 100%;
         top: -10px;
     }
 
@@ -2567,7 +2571,7 @@ textarea {
 
     /* about us */
     .aboutus {
-        height: auto;
+        background-size: auto 100%;
         top: -10px;
     }
 
