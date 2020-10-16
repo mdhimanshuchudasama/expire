@@ -31,7 +31,7 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header id="totop">
         <div class="navbar">
             <div class="content">
                 <nav>
@@ -46,11 +46,11 @@
                     </label>
                     <ul class="navigation">
                         <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#">Pages</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#contactus">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -115,7 +115,7 @@
     </section>
 
     <!-- Aboutus -->
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
         <div class="content">
             <div class="inner-width">
                 <h1 class="aboutus-title">About Us</h1>
@@ -130,7 +130,7 @@
                     <div class="aboutus-services">
                         <div class="aboutus-service-box">
                             <div class="service-heading">
-                                <div class="service-icon"><i class="fa fa-paragraph" aria-hidden="true"></i>
+                                <div class="service-icon"><i class="fas fa-paragraph"></i>
                                 </div>
                                 <div class="service-title">
                                     <h1>Typography</h1>
@@ -146,10 +146,10 @@
 
                         <div class="aboutus-service-box">
                             <div class="service-heading">
-                                <div class="service-icon"><i class="fa fa-paragraph" aria-hidden="true"></i>
+                                <div class="service-icon"><i class="fas fa-bezier-curve"></i>
                                 </div>
                                 <div class="service-title">
-                                    <h1>Typography</h1>
+                                    <h1>Full icon Set</h1>
                                 </div>
                             </div>
                             <div class="service-desc">
@@ -162,10 +162,10 @@
 
                         <div class="aboutus-service-box">
                             <div class="service-heading">
-                                <div class="service-icon"><i class="fa fa-paragraph" aria-hidden="true"></i>
+                                <div class="service-icon"><i class="fas fa-ruler-combined"></i>
                                 </div>
                                 <div class="service-title">
-                                    <h1>Typography</h1>
+                                    <h1>Accurate</h1>
                                 </div>
                             </div>
                             <div class="service-desc">
@@ -251,7 +251,7 @@
     <!-- #state-excerpts -->
 
     <!-- Blog -->
-    <section class="blog-posts">
+    <section class="blog-posts" id="blog">
         <div class="content">
             <div class="inner-width">
                 <h1 class="blog-posts-title">Latest Blog Posts</h1>
@@ -265,90 +265,229 @@
             <!--blog-carousel -->
             <div class="recent-blogs owl-carousel">
                 <div class="recent-blog">
-                    <div class="blog-content">
-                        <div class="blog-title">
-                            <h1>Just Another Blog Post</h1>
+                    <div class="blog-post-border">
+                        <img src="images/pngs/blog-post-border.png" alt="">
+
+                        <div class="featured-img">
+                            <img src="images/blog-post-featured-img.jpg" alt="">
                         </div>
-                        <div class="blog-detail">
-                            <div class="blog-author">
-                                <h2><span><i class="far fa-user"></i></span>By Author</h2>
+
+                        <div class="blog-content">
+                            <div class="blog-title">
+                                <h1>Just Another Blog Post</h1>
                             </div>
-                            <div class="blog-post-date">
-                                <h2><span><i class="far fa-calendar-alt"></i></span>09 November 2014</h2>
+                            <div class="blog-detail">
+                                <div class="blog-author">
+                                    <h2><span><i class="far fa-user"></i></span>By Author</h2>
+                                </div>
+                                <div class="blog-post-date">
+                                    <h2><span><i class="far fa-calendar-alt"></i></span>9 December 2014</h2>
+                                </div>
+                                <div class="blog-comment">
+                                    <h2><span><i class="far fa-comment-alt"></i></span>3</h2>
+                                </div>
                             </div>
-                            <div class="blog-comment">
-                                <h2><span><i class="far fa-comment-alt"></i></span>3</h2>
+                            <div class="blog-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
+                                    similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
+                                    illum error delectus optio nobis eaque distinctio! Suscipit
+                                    nostrum?
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <button>Read More</button>
                             </div>
                         </div>
-                        <div class="blog-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
-                                similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
-                                illum error delectus optio nobis eaque distinctio! Suscipit
-                                nostrum?
-                            </p>
+                    </div>
+
+                </div>
+
+                <div class="recent-blog">
+                    <div class="blog-post-border">
+                        <img src="images/pngs/blog-post-border.png" alt="">
+
+                        <div class="featured-img">
+                            <img src="images/blog-post-featured-img.jpg" alt="">
                         </div>
-                        <div class="read-more">
-                            <button>Read More</button>
+
+                        <div class="blog-content">
+                            <div class="blog-title">
+                                <h1>Blog Post With Youtube Video</h1>
+                            </div>
+                            <div class="blog-detail">
+                                <div class="blog-author">
+                                    <h2><span><i class="far fa-user"></i></span>By Author</h2>
+                                </div>
+                                <div class="blog-post-date">
+                                    <h2><span><i class="far fa-calendar-alt"></i></span>29 December 2014</h2>
+                                </div>
+                                <div class="blog-comment">
+                                    <h2><span><i class="far fa-comment-alt"></i></span>1</h2>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
+                                    similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
+                                    illum error delectus optio nobis eaque distinctio! Suscipit
+                                    nostrum?
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <button>Read More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="recent-blog">
-                    <div class="blog-content">
-                        <div class="blog-title">
-                            <h1>Blog Post With Youtube Video</h1>
+                    <div class="blog-post-border">
+                        <img src="images/pngs/blog-post-border.png" alt="">
+
+                        <div class="featured-img">
+                            <img src="images/blog-post-featured-img.jpg" alt="">
                         </div>
-                        <div class="blog-detail">
-                            <div class="blog-author">
-                                <h2><span><i class="far fa-user"></i></span>By Author</h2>
+
+                        <div class="blog-content">
+                            <div class="blog-title">
+                                <h1>This Could be Great</h1>
                             </div>
-                            <div class="blog-post-date">
-                                <h2><span><i class="far fa-calendar-alt"></i></span>29 December 2014</h2>
+                            <div class="blog-detail">
+                                <div class="blog-author">
+                                    <h2><span><i class="far fa-user"></i></span>By Author</h2>
+                                </div>
+                                <div class="blog-post-date">
+                                    <h2><span><i class="far fa-calendar-alt"></i></span>10 June 2014</h2>
+                                </div>
+                                <div class="blog-comment">
+                                    <h2><span><i class="far fa-comment-alt"></i></span>0</h2>
+                                </div>
                             </div>
-                            <div class="blog-comment">
-                                <h2><span><i class="far fa-comment-alt"></i></span>1</h2>
+                            <div class="blog-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
+                                    similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
+                                    illum error delectus optio nobis eaque distinctio! Suscipit
+                                    nostrum?
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <button>Read More</button>
                             </div>
                         </div>
-                        <div class="blog-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
-                                similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
-                                illum error delectus optio nobis eaque distinctio! Suscipit
-                                nostrum?
-                            </p>
+                    </div>
+
+                </div>
+
+                <div class="recent-blog">
+                    <div class="blog-post-border">
+                        <img src="images/pngs/blog-post-border.png" alt="">
+
+                        <div class="featured-img">
+                            <img src="images/blog-post-featured-img.jpg" alt="">
                         </div>
-                        <div class="read-more">
-                            <button>Read More</button>
+
+                        <div class="blog-content">
+                            <div class="blog-title">
+                                <h1>Just Another Blog Post</h1>
+                            </div>
+                            <div class="blog-detail">
+                                <div class="blog-author">
+                                    <h2><span><i class="far fa-user"></i></span>By Author</h2>
+                                </div>
+                                <div class="blog-post-date">
+                                    <h2><span><i class="far fa-calendar-alt"></i></span>9 December 2014</h2>
+                                </div>
+                                <div class="blog-comment">
+                                    <h2><span><i class="far fa-comment-alt"></i></span>3</h2>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
+                                    similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
+                                    illum error delectus optio nobis eaque distinctio! Suscipit
+                                    nostrum?
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recent-blog">
+                    <div class="blog-post-border">
+                        <img src="images/pngs/blog-post-border.png" alt="">
+
+                        <div class="featured-img">
+                            <img src="images/blog-post-featured-img.jpg" alt="">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="blog-title">
+                                <h1>Blog Post With Youtube Video</h1>
+                            </div>
+                            <div class="blog-detail">
+                                <div class="blog-author">
+                                    <h2><span><i class="far fa-user"></i></span>By Author</h2>
+                                </div>
+                                <div class="blog-post-date">
+                                    <h2><span><i class="far fa-calendar-alt"></i></span>29 December 2014</h2>
+                                </div>
+                                <div class="blog-comment">
+                                    <h2><span><i class="far fa-comment-alt"></i></span>1</h2>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
+                                    similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
+                                    illum error delectus optio nobis eaque distinctio! Suscipit
+                                    nostrum?
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <button>Read More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="recent-blog">
-                    <div class="blog-content">
-                        <div class="blog-title">
-                            <h1>This Could be Great</h1>
+                    <div class="blog-post-border">
+                        <img src="images/pngs/blog-post-border.png" alt="">
+
+                        <div class="featured-img">
+                            <img src="images/blog-post-featured-img.jpg" alt="">
                         </div>
-                        <div class="blog-detail">
-                            <div class="blog-author">
-                                <h2><span><i class="far fa-user"></i></span>By Author</h2>
+
+                        <div class="blog-content">
+                            <div class="blog-title">
+                                <h1>This Could be Great</h1>
                             </div>
-                            <div class="blog-post-date">
-                                <h2><span><i class="far fa-calendar-alt"></i></span>10 June 2014</h2>
+                            <div class="blog-detail">
+                                <div class="blog-author">
+                                    <h2><span><i class="far fa-user"></i></span>By Author</h2>
+                                </div>
+                                <div class="blog-post-date">
+                                    <h2><span><i class="far fa-calendar-alt"></i></span>10 June 2014</h2>
+                                </div>
+                                <div class="blog-comment">
+                                    <h2><span><i class="far fa-comment-alt"></i></span>0</h2>
+                                </div>
                             </div>
-                            <div class="blog-comment">
-                                <h2><span><i class="far fa-comment-alt"></i></span>0</h2>
+                            <div class="blog-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
+                                    similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
+                                    illum error delectus optio nobis eaque distinctio! Suscipit
+                                    nostrum?
+                                </p>
                             </div>
-                        </div>
-                        <div class="blog-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
-                                similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium
-                                illum error delectus optio nobis eaque distinctio! Suscipit
-                                nostrum?
-                            </p>
-                        </div>
-                        <div class="read-more">
-                            <button>Read More</button>
+                            <div class="read-more">
+                                <button>Read More</button>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -356,7 +495,7 @@
     <!-- #blog -->
 
     <!-- Portfolio -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="content">
             <div class="inner-width">
                 <h1 class="portfolio-title">Latest Portfolio</h1>
@@ -495,44 +634,50 @@
 
     <!-- testimonial -->
     <section class="testimonial">
-        <div class="content">
-            <div class="inner-width">
-                <div class="testimonial-title">And what do others say?</div>
-                <div class="border"></div>
-                <div class="testimonial-boxes">
-                    <div class="testimonial-box-1">
-                        <div class="t1-icon">
-                            <span><i class="fa fa-folder"></i></span>
-                        </div>
-                        <div class="client-data">
-                            <div class="client-info">
-                                <h1 class="client-name">Astrid Jorgensen</h1>
-                                <h2 class="position">CEO at Runway inc.</h2>
+        <div class="testimonial-overlay">
+            <div class="content">
+                <div class="inner-width">
+                    <div class="testimonial-title">And what do others say?</div>
+                    <div class="border"></div>
+                    <div class="testimonial-boxes">
+                        <div class="testimonial-box-1">
+                            <div class="t1-icon">
+                                <span><i class="fa fa-folder"></i></span>
                             </div>
-                            <div class="client-review">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
-                                    similique tempora voluptate quia in ea minima earum consequatur</p>
+                            <div class="client-data">
+                                <div class="client-info">
+                                    <h1 class="client-name">Astrid Jorgensen</h1>
+                                    <h2 class="position">CEO at Runway inc.</h2>
+                                </div>
+                                <div class="client-review">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem
+                                        similique tempora voluptate quia in ea minima earum consequatur</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-box-2">
-                        <div class="t2-expand">
-                            <p> <span><i class="fas fa-angle-down"></i></span> EXPAND</p>
-                        </div>
-                        <div class="t2-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime perferendis voluptatum
-                                maiores quos sit unde labore sed ratione ut fugiat veniam, tempora, aliquam, tenetur in
-                                vero. Suscipit quod deleniti dolor. Ex quo reiciendis
-                                consectetur magnam sed neque aut pariatur, iusto harum impedit. Harum vitae asperiores
-                                expedita excepturi deserunt eos aspernatur omnis. In, repudiandae aliquam assumenda. Qui
-                                consequatur culpa, praesentium amet dolore
-                                dignissimos quam eum! Illum mollitia et maiores unde. Amet!</p>
-                        </div>
-                        <div class="t2-hover">
-                            <p> <span><i class="fas fa-angle-down"></i></span> HOVERED</p>
-                        </div>
-                        <div class="t2-inactive">
-                            <p> <span><i class="fas fa-angle-down"></i></span> INACTIVE</p>
+                        <div class="testimonial-box-2">
+                            <div class="t2-expand">
+                                <p> <span><i class="fas fa-angle-down"></i></span> EXPAND</p>
+                            </div>
+                            <div class="t2-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime perferendis
+                                    voluptatum
+                                    maiores quos sit unde labore sed ratione ut fugiat veniam, tempora, aliquam, tenetur
+                                    in
+                                    vero. Suscipit quod deleniti dolor. Ex quo reiciendis
+                                    consectetur magnam sed neque aut pariatur, iusto harum impedit. Harum vitae
+                                    asperiores
+                                    expedita excepturi deserunt eos aspernatur omnis. In, repudiandae aliquam assumenda.
+                                    Qui
+                                    consequatur culpa, praesentium amet dolore
+                                    dignissimos quam eum! Illum mollitia et maiores unde. Amet!</p>
+                            </div>
+                            <div class="t2-hover">
+                                <p> <span><i class="fas fa-angle-down"></i></span> HOVERED</p>
+                            </div>
+                            <div class="t2-inactive">
+                                <p> <span><i class="fas fa-angle-down"></i></span> INACTIVE</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -542,7 +687,7 @@
     <!-- #testimonial -->
 
     <!-- Contactus -->
-    <section class="contactus">
+    <section class="contactus" id="contactus">
         <div class="content">
             <div class="inner-width">
                 <div class="contactus-title">Get to know us better</div>
@@ -604,7 +749,7 @@
     <!-- Footer -->
     <section class="footer">
         <div class="to-top">
-            <span><i class="fas fa-angle-up"></i></span>
+            <span><a href="#totop"><i class="fas fa-angle-up"></i></a></span>
         </div>
         <div class="content">
             <div class="inner-width">

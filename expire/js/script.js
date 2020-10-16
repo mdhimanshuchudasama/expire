@@ -1,4 +1,19 @@
-$(document).ready(function () {
+$(document).ready(function() {
+    $(window).on('hashchange', function() {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
+    });
+    
+    $('a[href*="#"]').on('click', function(event) {
+    let hash = this.hash;
+    if (hash) {
+        event.preventDefault();
+        $('html, body').animate({
+        scrollTop: $(hash).offset().top - 100
+        }, 750, function() {
+        window.location.hash = hash;
+        });
+    }
+    });
 
     // Banner owl carousel
     $('.banner-carousel').owlCarousel({
@@ -14,24 +29,31 @@ $(document).ready(function () {
 
     // Blog Owl carousel 
     $('.recent-blogs').owlCarousel({
-        // loop:true,
-        margin: 10,
+        // loop: true,
+        
         // autoplayTime: 2000,
         // autoplayHoverPause:true,
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1,
-                nav: true,
+                items:0,
+                nav: false,
                 // loop:true
             },
-            968: {
+            411:{
+                items:1,
+                margin: 10,
+                nav:true
+            },
+            768: {
                 items: 2,
+                margin: 10,
                 nav: true,
                 // loop:true
             },
-            1200: {
+            992:{
                 items: 3,
+                margin: 10,
                 nav: true,
                 // loop: true
             }
@@ -39,29 +61,3 @@ $(document).ready(function () {
     });
 });
 
-
-
-// $('.recent-blogs').owlCarousel({
-//     margin:10,
-//     loop: true,
-//     nav:true,
-//     // autoplayTime: 2000,
-//     // autoplayHoverPause:true,
-//     responsive: {
-//         0:{
-//             item:1,
-//             nav:true
-//         },
-//         600:{   
-//             item:2,
-//             nav:true
-//         },
-//         1000:{
-//             item:3,
-//             nav:true
-//         }
-//     }
-
-
-
-// });   
